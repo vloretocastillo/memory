@@ -8,6 +8,8 @@ class Card extends React.Component {
     handleClick = (e) => {
         const node = document.getElementById(this.props.id)
         node.classList.add('flipped')
+        
+        this.props.addFlipped()
     }
 
     render () {
