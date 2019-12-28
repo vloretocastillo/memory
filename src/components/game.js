@@ -7,7 +7,7 @@ class Game extends React.Component {
         cards: cards
     }
 
-    generateCards = (cards) => [...cards.map((el, ind)=> <Card key={ind + '0'} value={el}/> ), cards.map((el, ind)=> <Card key={ind} value={el}/> )]
+    generateCards = (cards) => [...cards.map((el, ind)=> <Card id={ ind + 'A' } key={ind + '0'} value={el}/> ), cards.map((el, ind)=> <Card id={ ind + 'b' } key={ind} value={el}/> )]
     
     shuffle = (arr) => arr.sort(() => { return 0.5 - Math.random() })
 
