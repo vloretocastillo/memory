@@ -60,6 +60,11 @@ class Game extends React.Component {
         this.setState({ cards : cards })
     }
 
+    componentDidUpdate() {
+        let nonMatchedOnes = this.state.cards.filter(el => el.foundMatch === false)
+        if (nonMatchedOnes.length === 0) setTimeout(()=>alert('yay'), 500 )
+    }
+
     
 
    
