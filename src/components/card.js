@@ -6,22 +6,28 @@ class Card extends React.Component {
 
 
     handleClick = (e) => {
-        // const node = document.getElementById( this.props.index )
-        // node.classList.add('flipped')
-        console.log('clicked', this.props.index)
-        this.props.handleCardReveal( this.props.index )
-
-        
+        this.props.handleCardReveal( this.props.id )
     }
+
+    // componentDidUpdate() {console.log('updated')}
 
     render () {
 
-        let classes = this.props.isOpen || this.props.foundMatch ? "flip-card-inner flipped" : "flip-card-inner"
+        // let classes = this.props.foundMatch || this.props.isRevealed ? "flip-card-inner flipped" : "flip-card-inner"
+        let classes;
+        if (this.props.foundMatch || this.props.isRevealed) {
+            classes = "flip-card-inner flipped"
+        } else {
+            classes = "flip-card-inner"
+        }
+        // console.log(classes)
+        // console.log(this.props.isRevealed )
+        // console.log('from card:', this.props.index, this.props.value)
 
         return (
             <div onClick={ (e)=> this.handleClick(e) }>
                 <div  className="flip-card card">
-                    <div id={ this.props.index } className={classes}>
+                    <div id={ this.props.id } className={classes}>
                         <div className="flip-card-front">
                         </div>
                         <div className="flip-card-back">
