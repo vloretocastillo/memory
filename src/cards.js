@@ -23,11 +23,18 @@ let cards = [
         foundMatch : false,
         id: 3   
     },
-    // {
-    //     name: 'blue',
-    //     isOpen : false,
-    //     foundMatch : false    
-    // },
+    {
+        name: 'blue',
+        isOpen : false,
+        foundMatch : false,
+        id: 4   
+    },
+    {
+        name: 'blue',
+        isOpen : false,
+        foundMatch : false,
+        id: 5   
+    },
     // {
     //     name: 'cloud',
     //     isOpen : false,

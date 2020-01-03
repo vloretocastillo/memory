@@ -65,13 +65,23 @@ class Game extends React.Component {
         if (nonMatchedOnes.length === 0) setTimeout(()=>alert('yay'), 500 )
     }
 
-    
+    resetGame = () => {
+        let { cards } = this.state
+        cards = cards.map(el => {
+            el.foundMatch = false
+            el.isOpen = false
+            return el
+        })
+        cards = cards.sort(() => { return 0.5 - Math.random() })
+        this.setState({ cards })
+    }
 
    
    
     render () {
         return (
             <div className='game'> 
+                <button className="new-game" onClick={() => this.resetGame()}>New Game</button>
                 { this.generateCards(this.state.cards) }
             </div>
         )

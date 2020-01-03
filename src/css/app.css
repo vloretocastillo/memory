@@ -88,3 +88,15 @@
     align-items: center;
 
   }
+
+  .new-game {
+    position: absolute;
+    top: 5%;
+    padding: 1% 2%;
+    border: none;
+    color: teal;
+    /* background-color: teal; */
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
