@@ -35,6 +35,18 @@ let cards = [
         foundMatch : false,
         id: 5   
     },
+    {
+        name: 'lovely',
+        isOpen : false,
+        foundMatch : false,
+        id: 6   
+    },
+    {
+        name: 'lovely',
+        isOpen : false,
+        foundMatch : false,
+        id: 7   
+    },
     // {
     //     name: 'cloud',
     //     isOpen : false,
