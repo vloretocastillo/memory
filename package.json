@@ -8,13 +8,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy" : "gh-pages -d public"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
-  "homepage" : "https://vloretocastillo.github.io/memory/",
+  "homepage": "https://vloretocastillo.github.io/memory/",
   "dependencies": {
-    "gh-pages": "^2.2.0",
     "nodemon": "^2.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -31,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
